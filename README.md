@@ -18,5 +18,5 @@ This project implements a complete Machine Learning training pipeline for image 
 ## Installation & Usage
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/sophiakoroliova/mlops_lab1.git](https://github.com/sophiakoroliova/mlops_lab1.git)
+   git clone https://github.com/sophiakoroliova/mlops_lab1.git
    cd mlops_lab1
