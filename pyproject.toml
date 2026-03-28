@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "mlops-lab1"
+version = "0.1.0"
+description = ""
+authors = ["sophiakoroliova <89981226+sophiakoroliova@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.14"
+torch = "^2.11.0"
+torchvision = "^0.26.0"
+pyyaml = "^6.0.3"
+pandas = "^3.0.1"
+tqdm = "^4.67.3"
+scikit-learn = "^1.8.0"
+matplotlib = "^3.10.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "ruff (>=0.15.7,<0.16.0)",
+    "black (>=26.3.1,<27.0.0)",
+    "mypy (>=1.19.1,<2.0.0)"
+]
