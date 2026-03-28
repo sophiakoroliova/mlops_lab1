@@ -1,28 +1,22 @@
-# Lab 1: Implementing a Basic Machine Learning Training Pipeline
+# CIFAR-10 ML Training Pipeline
 
-Ця лабораторна робота присвячена створенню повного циклу навчання нейронної мережі для класифікації зображень з використанням сучасних інженерних практик (MLOps).
+This project implements a complete Machine Learning training pipeline for image classification using the CIFAR-10 dataset and a Convolutional Neural Network (CNN).
 
-## Про проект
-- **Датасет:** CIFAR-10 (60,000 кольорових зображень 10 класів).
-- **Модель:** Покращена згорткова нейронна мережа (CNN) з двома шарами згортки та дропаутом.
-- **Інструменти:** PyTorch, Poetry, Scikit-learn, YAML.
+## Features
+- **Modular Architecture**: Separate modules for data, model, and pipeline.
+- **Config Management**: All hyperparameters are stored in `configs/config.yaml`.
+- **GPU Acceleration**: Fully compatible with Google Colab (CUDA).
+- **Artifact Management**: Automatically saves logs, plots, and the best model to the `outputs/` folder.
+- **Best Model Checkpointing**: Saves the model state with the highest F1-score.
 
-## Структура проекту
-Проект організовано згідно з принципами модульності:
-- `configs/` — файл `config.yaml` для керування гіперпараметрами.
-- `src/dataset.py` — завантаження та розбиття даних на Train/Val/Test.
-- `src/model.py` — архітектура нейронної мережі.
-- `src/pipeline.py` — функції для навчання та обчислення метрик.
-- `main.py` — точка входу для запуску всього пайплайну.
+## Project Structure
+- `main.py`: Entry point of the application.
+- `src/`: Source code (dataset, model, pipeline).
+- `configs/`: YAML configuration files.
+- `outputs/`: Training logs, loss plots, and saved models.
 
-## Результати (Final Metrics)
-Після 5 епох навчання на тестовому наборі даних було отримано такі результати:
-- **Accuracy:** 67.39%
-- **F1-Score:** 0.6744
-- **Precision:** 0.6797
-- **Recall:** 0.6739
-
-## Як запустити
-1. **Встановіть залежності через Poetry:**
+## Installation & Usage
+1. Clone the repository:
    ```bash
-   poetry install
+   git clone [https://github.com/sophiakoroliova/mlops_lab1.git](https://github.com/sophiakoroliova/mlops_lab1.git)
+   cd mlops_lab1
