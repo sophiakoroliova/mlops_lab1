@@ -40,7 +40,7 @@ I have implemented the following industry-standard practices:
 * **Configuration Management**: Used `configs/config.yaml` to decouple hyperparameters from the logic.
 * **Automated Logging**: Used the `logging` module to record the training process in `outputs/training.log`.
 * **Artifact Organization**: All results (logs, plots, `.pth` models) are automatically gathered in an `outputs/` folder using the `os` module.
-* **Code Quality**: Applied Type Hinting and detailed English comments for professional documentation.
+* **Code Quality**: Applied Type Hinting and detailed comments for professional documentation.
 
 ## 5. Reflection
 The experiment with 30 epochs was highly effective in identifying the model's capacity limits. While the model is functional and accurate (~69%), it is prone to overfitting quite early (after 8 epochs) due to the lack of regularization.
